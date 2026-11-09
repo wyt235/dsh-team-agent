@@ -1,0 +1,6 @@
+# 交付协议插件：只注册 Host 侧工具（状态机 / 看板 / 轮次配置 / worktree 隔离）。
+# 不依赖 agent-team、不依赖实验性 worktree 包；隔离通过 git worktree 命令自实现。
+- insert:
+    - id: delivery-protocol
+      name: '@dsh-external/delivery-protocol'
+      config: {}

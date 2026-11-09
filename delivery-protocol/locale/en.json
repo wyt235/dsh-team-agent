@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Delivery Protocol",
+    "description": "Multi-agent delivery protocol: REQ state machine, review board records, configurable round limits, reserved acceptance layer, and git worktree isolation."
+  }
+}

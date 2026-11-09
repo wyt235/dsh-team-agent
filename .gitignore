@@ -1,0 +1,35 @@
+# ── 依赖 / 构建产物（可再生成，不提交）──
+node_modules/
+*.tsbuildinfo
+*.tgz
+dist/
+build/
+out/
+
+# ── 本站工作区里的独立仓库 ──
+# diff-viewer 有自己的 .git 与远端（origin: https://github.com/wyt235/dsh-diff-viewer.git），
+# 重复纳入会形成“嵌入仓库/gitlink”，导致提交内容悬空；如需纳入请改用 submodule。
+diff-viewer/
+
+# ── 运行时 / 测试产物 ──
+# delivery-protocol 的 worktree 池（.agents/worktrees/dp/<TASK-ID>）
+.agents/
+test-workspace/
+*.log
+npm-debug.log*
+
+# ── 操作系统 / 编辑器 ──
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# ── 本地密钥 / 凭据（绝不提交）──
+.env
+.env.*
+*.pem
+*.key
+.credentials.yaml

@@ -1,0 +1,32 @@
+{
+  "name": "@dsh-external/delivery-protocol",
+  "version": "0.1.0",
+  "description": "多 Agent 软件交付协议：REQ 状态机、看板记录、轮次配置、保留层验收、git worktree 隔离",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "license": "BSD-3-Clause",
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "smoke": "node tests/smoke.mjs"
+  }
+}

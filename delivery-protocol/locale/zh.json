@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "交付协议",
+    "description": "多 Agent 软件交付协议：REQ 状态机、看板记录、可配置轮次上限、保留层验收、git worktree 隔离。"
+  }
+}
